@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+/* This ensures that there is no whitespace surrounding our content. Comment this out or delete it, and you may see some unwelcome whitespace 😖. The * means everything. the ::after and ::before are pseudo elements, we'll cover these later in class */
+  margin: 0;
+  padding: 0;
+  font-family: 'Varela Round', sans-serif;
+  /* This is for our anchor (<a>) tag. It makes it so that there is a scrolling effect when we navigate to other parts of our page. Not supported on all browsers 😔 */
+  scroll-behavior: smooth;
+
+}
+/* This ensure the header sections takes up the whole viewport */
+header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+/* Sticks navigation bar to the top-right of the page */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+/* Styles the links in navigation bar */
+a {
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+/* Mobile view */
+@media screen and (max-width: 414px) {
+    /* Centers the information in the header in the middle of the horizontal axis */
+    .header-info-photo {
+        text-align: center;
+        position: absolute;
+        top: 150px;
+        width: 100vw;
+    }
+    h1, h2 {
+        padding-bottom: 20px;
+    }
+    .header-info-photo img {
+        width: 200px;
+        border-radius: 10px;
+    }
+}
+
+/* Tablet view */
