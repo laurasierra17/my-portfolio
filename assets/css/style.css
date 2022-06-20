@@ -6,9 +6,10 @@
   padding: 0;
   font-family: 'Varela Round', sans-serif;
   /* This is for our anchor (<a>) tag. It makes it so that there is a scrolling effect when we navigate to other parts of our page. Not supported on all browsers 😔 */
-  scroll-behavior: smooth;
-
+  /* scroll-behavior: smooth; */
 }
+
+/* --------------------------- HEADER --------------------------- */
 /* This ensure the header sections takes up the whole viewport */
 header {
     height: 100vh;
@@ -55,8 +56,62 @@ a {
     transform: translate(-50%, -50%);
 }
 
+/* --------------------------- PROJECTS --------------------------- */
+/* Three cards per row */
+#projects {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project-card {
+    display: flex;
+    background-color: grey;
+    padding: 20px;
+    margin: 20px;
+    width: fit-content;
+}
+.project-card .card-info {
+    padding: 20px;
+}
+.project-card .card-info h2, p {
+    width: 200px;
+}
+.project-card .card-info a {
+    display: block;
+    /* position: relative;
+    top: 65%; */
+}
+.project-card figure {
+    padding-left: 30px;
+}
+.project-card figure img{
+    float: right;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+}
+.project-card figure figcaption {
+    padding: 5px;
+    font-size: 12px;
+    width: 300px;
+    clear: both;
+}
+/* --------------------------- ABOUT ME --------------------------- */
+
+
+/* --------------------------- CONTACT ME --------------------------- */
+
+
+
+
+
+
+
 /* Mobile and tablet view */
 @media screen and (max-width: 681px) {
+    /* --------------------------- HEADER --------------------------- */
+
     /* Centers the information in the header in the middle of the horizontal axis */
     /* Stacks elements in the header on top of each other */
     header {
@@ -87,4 +142,12 @@ a {
     #go-to-work {
         bottom: 8%;
     }
+
+    /* --------------------------- PROJECTS --------------------------- */
+    /* One card per row */
+    
+
+    /* --------------------------- ABOUT ME --------------------------- */
+
+    /* --------------------------- CONTACT ME --------------------------- */
 }
