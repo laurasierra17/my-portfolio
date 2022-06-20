@@ -77,11 +77,13 @@ a {
 .project-card .card-info h2, p {
     width: 200px;
 }
-.project-card .card-info a {
-    display: block;
-    /* position: relative;
-    top: 65%; */
-}
+/* .project-card a {
+    display: inline;
+    position: relative;
+    top: 325px;
+    right: 550px;
+} */
+
 .project-card figure {
     padding-left: 30px;
 }
@@ -164,11 +166,11 @@ a {
     }
     .project-card figure img{
         float: none;
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
     .project-card figure figcaption {
-        width: 300px;
+        width: 200px;
     }
 
     /* --------------------------- ABOUT ME --------------------------- */
