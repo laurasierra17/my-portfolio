@@ -145,7 +145,31 @@ a {
 
     /* --------------------------- PROJECTS --------------------------- */
     /* One card per row */
-    
+    .project-card {
+        width: 70vw;
+        display: inline-block;
+        
+    }
+    .project-card .tech-info {
+        display: flex;
+        padding: 20px 0;
+    }
+    .project-card .card-info h2, h2+p {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .project-card figure {
+        padding-left: 20px;
+    }
+    .project-card figure img{
+        float: none;
+        width: 300px;
+        height: 300px;
+    }
+    .project-card figure figcaption {
+        width: 300px;
+    }
 
     /* --------------------------- ABOUT ME --------------------------- */
 
