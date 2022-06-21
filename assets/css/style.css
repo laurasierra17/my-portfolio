@@ -4,6 +4,7 @@
 /* This ensures that there is no whitespace surrounding our content. Comment this out or delete it, and you may see some unwelcome whitespace 😖. The * means everything. the ::after and ::before are pseudo elements, we'll cover these later in class */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Varela Round', sans-serif;
   /* This is for our anchor (<a>) tag. It makes it so that there is a scrolling effect when we navigate to other parts of our page. Not supported on all browsers 😔 */
   /* scroll-behavior: smooth; */
@@ -63,6 +64,7 @@ a {
     flex: 1;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 300px auto;
 }
 .project-card {
     display: flex;
@@ -103,6 +105,7 @@ a {
 #about-me {
     display: flex;
     justify-content: center;
+    margin: 50px auto;
 }
 .about-me-text {
     line-height: 34px;
@@ -118,7 +121,7 @@ a {
 .about-me-image img {
     display: block;
     width: auto;
-    height: 400px;
+    height: 600px;
     border-radius: 20px;
     box-shadow: 5px 10px 8px grey;
 }
@@ -126,13 +129,28 @@ a {
 /* --------------------------- CONTACT ME --------------------------- */
 
 
+/* Tablet view for About Me section */
+@media screen and (max-width: 820px) {
+    #about-me {
+        display: inline
+    }
+    .about-me-text {
+        display: block;
+        position: relative;
+        width: auto;
+    }
+    .about-me-image img{
+        width: 300px;
+        float: left;
+        height: auto;
+        margin: 10px 30px;
+    }
+}
 
 
 
-
-
-/* Mobile and tablet view */
-@media screen and (max-width: 681px) {
+/* Mobile and most tablets view */
+@media screen and (max-width: 618px) {
     /* --------------------------- HEADER --------------------------- */
 
     /* Centers the information in the header in the middle of the horizontal axis */
@@ -202,17 +220,20 @@ a {
     }
     .about-me-text {
         width: auto;
+        margin-left: 20px;
     }
-    .about-me-text h2 {
+    /* .about-me-text h2 {
         font-size: 25px;
     }
     .about-me-text p {
         font-size: 14px;
-    }
+    } */
     .about-me-image img{
         width: 100%;
         height: auto;
+        float: none;
         margin-bottom: 35px;
+        margin-left: 0;
     }
     /* --------------------------- CONTACT ME --------------------------- */
 }
