@@ -7,7 +7,7 @@
   box-sizing: border-box;
   font-family: 'Varela Round', sans-serif;
   /* This is for our anchor (<a>) tag. It makes it so that there is a scrolling effect when we navigate to other parts of our page. Not supported on all browsers 😔 */
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 /* --------------------------- HEADER --------------------------- */
@@ -140,8 +140,15 @@ a {
     padding-bottom: 30px;
 }
 
-
-
+/* --------------------------- FOOTER --------------------------- */
+footer {
+    padding: 15px;
+	width: 100%;
+	bottom: 0;
+	background-color: rgb(89, 14, 14);
+	color: white;
+	text-align: right;
+}
 
 
 
