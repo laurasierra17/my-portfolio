@@ -127,6 +127,29 @@ a {
 }
 
 /* --------------------------- CONTACT ME --------------------------- */
+#contact-me {
+    text-align: center;
+    margin: 400px auto;
+    padding: 50px;
+    background-color: antiquewhite;
+    width: fit-content;
+    border-radius: 20px;
+    font-size: 25px;
+}
+#contact-me h2{
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Tablet view for About Me section */
@@ -146,8 +169,6 @@ a {
         margin: 10px 30px;
     }
 }
-
-
 
 /* Mobile and most tablets view */
 @media screen and (max-width: 618px) {
