@@ -12,6 +12,8 @@
 
 :root {
     --cream-color: antiquewhite;
+    --dark-cream: rgb(132, 105, 70);
+    --darker-cream: rgb(96, 74, 45)
 }
 
 /* --------------------------- HEADER --------------------------- */
@@ -22,6 +24,9 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
+}
+header a {
+    color: var(--dark-cream);
 }
 
 .header-info-photo {
@@ -72,7 +77,8 @@ a {
 }
 .project-card {
     display: flex;
-    background-color: grey;
+    background-color: var(--cream-color);
+    border-radius: 70px;
     padding: 20px;
     margin: 20px;
     width: fit-content;
@@ -96,6 +102,7 @@ a {
 .project-card figure img{
     float: right;
     /* width: 300px; */
+    border-radius: 30px;
     height: 300px;
     padding: 5px;
 }
@@ -104,16 +111,23 @@ a {
     width: 500px;
 }
 .project-card figure figcaption {
-    padding: 5px;
+    padding: 20px;
     font-size: 12px;
-    width: 300px;
+    /* width: 300px; */
     clear: both;
+    color: var(--dark-cream);
 }
 /* --------------------------- ABOUT ME --------------------------- */
 #about-me {
     display: flex;
     justify-content: center;
     margin: 50px auto;
+    background-color: var(--cream-color);
+    padding: 90px;
+    border-radius: 100px 50px;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
 }
 .about-me-text {
     line-height: 34px;
@@ -125,6 +139,7 @@ a {
 }
 .about-me-text p {
     font-size: 18px;
+    color: var(--darker-cream)
 }
 .about-me-image img {
     display: block;
@@ -146,14 +161,15 @@ a {
 }
 #contact-me h2{
     padding-bottom: 30px;
+    color: var(--darker-cream);
 }
 
 /* --------------------------- FOOTER --------------------------- */
 footer {
-    padding: 15px;
+    padding: 25px;
 	width: 100%;
 	bottom: 0;
-	background-color: rgb(89, 14, 14);
+	background-color: var(--darker-cream);
 	color: white;
 	text-align: right;
 }
