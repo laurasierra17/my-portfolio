@@ -28,6 +28,9 @@ header {
 header a {
     color: var(--dark-cream);
 }
+header span {
+    color: var(--dark-cream);
+}
 
 .header-info-photo {
     display: flex;
@@ -98,6 +101,16 @@ a {
 
 .project-card figure {
     padding-left: 30px;
+    position: relative;
+}
+.project-card figure p {
+    position: absolute;
+    bottom: 80px;
+    left: 56px;
+    background-color: var(--darker-cream);
+    color: var(--cream-color);
+    padding: 10px;
+    border-radius: 20px;
 }
 .project-card figure img{
     float: right;
@@ -105,6 +118,7 @@ a {
     border-radius: 30px;
     height: 300px;
     padding: 5px;
+    box-shadow: 5px 10px 8px grey;
 }
 .project-card .first-image img {
     height: auto;
@@ -123,7 +137,6 @@ a {
     justify-content: center;
     margin: 50px auto;
     background-color: var(--cream-color);
-    padding: 90px;
     border-radius: 100px 50px;
     height: 100vh;
     width: 100%;
@@ -173,12 +186,6 @@ footer {
 	color: white;
 	text-align: right;
 }
-
-
-
-
-
-
 
 
 
