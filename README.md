@@ -1,6 +1,19 @@
 # Laura Sierra's Portfolio
 
-![GIF](./assets/images/Laura%20Sierra.gif)
+![GIF demo of my portfolio website](./assets/images/Laura%20Sierra.gif)
+
+## Screenshots
+Landing page:
+![Screenshot of the landing page](./assets/images/portfolio1.png)
+
+Part of my projects section:
+![Screenshot of part of my projects section](./assets/images/portfolio2.png)
+
+About me section:
+![Screenshot of the about me section](./assets/images/portfolio3.png)
+
+Section for my socials:
+![Screenshot of the section for my socials](./assets/images/portfolio4.png)
 
 ## Description
 
@@ -17,3 +30,7 @@ For a better user experience, I will improve the semantics and viewport responsi
 ## Deployed website link
 
 https://laurasierra17.github.io/my-portfolio/
+
+### User Information
+- [LinkedIn](https://www.linkedin.com/in/laurasierra2022)
+- [Portfolio](http://www.laura-sierra.com)
